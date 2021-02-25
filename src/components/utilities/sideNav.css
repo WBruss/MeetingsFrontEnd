@@ -1,0 +1,9 @@
+.side_nav {
+    width: 20ch;
+    height: 100vh;
+    background-color: blue;
+}
+
+.drawer_container{
+    width: 20vw;
+}

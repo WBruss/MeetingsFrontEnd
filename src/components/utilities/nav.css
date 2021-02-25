@@ -1,0 +1,15 @@
+.nav {
+    background-color: aqua;
+    height: 70px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* position: absolute; */
+}
+
+/* h1 {
+    margin: 10px;
+    top: 50%;
+    margin: auto 20px;
+    font-size: 30px;
+} */
