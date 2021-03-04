@@ -7,9 +7,9 @@ import { Slide } from '@material-ui/core';
 import './dashboard.css';
 
 //  Components
-import DashboardPage from './pages/dashboard_page';
-import MeetingsPage from './pages/meetings_page';
-import RoomsPage from './pages/rooms_page';
+import DashboardPage from './pages/dashboard/dashboard_page';
+import MeetingsPage from './pages/meetings/meetings_page';
+import RoomsPage from './pages/rooms/rooms_page';
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;

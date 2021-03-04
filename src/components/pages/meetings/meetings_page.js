@@ -1,9 +1,15 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 
-import MeetingsForm from '../utilities/meeting_form';
+import MeetingsForm from './meeting_form';
+import MeetingsTable from './meetings_table';
+
+// Import AppContext
+import { AppContext } from '../../../App';
 
 function MeetingsPage() {
     let meetingRooms = ["Venue","Block E Boardroom", "Sales Boardroom", "Block A boardroom"]
+
+    const [ appData, setAppData ] = useContext(AppContext);
 
     let meetingData = {
         title: '',
@@ -29,9 +35,11 @@ function MeetingsPage() {
     }
 
     return(
-        <>
+        
+         <>
             <h1>Meetings Page</h1>
             <MeetingsForm/>
+            <MeetingsTable/>
             {/* <form>
                 <label>
                     Title
