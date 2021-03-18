@@ -10,6 +10,7 @@ import './dashboard.css';
 import DashboardPage from './pages/dashboard/dashboard_page';
 import MeetingsPage from './pages/meetings/meetings_page';
 import RoomsPage from './pages/rooms/rooms_page';
+import RegistrationPage from './pages/registration/registration_page';
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -62,7 +63,7 @@ function Dashboard(){
                             }}
                         >
                             <Switch>
-                                <Route exact path="/">
+                                <Route exact path="/dashboard">
                                     <DashboardPage/>
                                 </Route>
                                 <Route exact path="/meetings" >

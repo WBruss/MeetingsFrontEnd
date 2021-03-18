@@ -15,6 +15,8 @@ import { Layout } from 'antd';
 import Nav from './components/utilities/nav';
 import SideNav from './components/utilities/side_nav';
 import Dashboard from './components/dashboard';
+import RegistrationPage from './components/pages/registration/registration_page';
+import LoginPage from './components/pages/login/login_page';
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -27,10 +29,16 @@ function App() {
     meetingData: [],
   });
 
+  let loggedIn = false;
+
   return (
     <AppContext.Provider value={[appData, setAppData]}>
       <BrowserRouter>
-        <Dashboard/>
+
+        {loggedIn?
+        <Dashboard/>  :       
+        <LoginPage/>        
+      }
       </BrowserRouter>
     </AppContext.Provider>
   );

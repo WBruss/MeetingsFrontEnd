@@ -1,0 +1,24 @@
+.registration_page{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-image: url("../../../images/meeting_room4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.registration_page_form{
+    position: absolute;
+    height: 35vh;
+    width: 25vw;
+    top: 50%;
+    left: 50%;
+    margin-left: -15%;
+    margin-top: -10%;
+    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)); */
+    background: rgba(231, 231, 231, 0.5);
+    border-radius: 0.75%;
+    padding: 20px;
+}

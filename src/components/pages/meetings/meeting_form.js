@@ -18,7 +18,7 @@ function MeetingsForm() {
 
     const createMeeting = async (meetindDetails) => {
         const response = await axios.post("http://localhost:9009/meetings", meetindDetails);
-        console.log(response.data);
+        console.log("Response: ",response.data);
         if(response.status == 200){
             setAppData({
                 ...appData,
@@ -29,7 +29,7 @@ function MeetingsForm() {
 
     const handleOnFinish = (values) => {
         console.log('Success:', values);
-        let date = new Date(values.date._d).toLocaleDateString();
+        let date = new Date(values.date._d).toLocaleDateString('fr-ca');
         let time = new Date(values.time._d).toLocaleTimeString('en-GB');
         let duration = new Date(values.duration._d).toLocaleTimeString('en-GB');
 
@@ -45,7 +45,7 @@ function MeetingsForm() {
 
         createMeeting(values);
 
-        form.resetFields();
+        // form.resetFields();
     }
     
     return(
